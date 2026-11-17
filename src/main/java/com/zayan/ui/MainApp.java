@@ -21,8 +21,9 @@ public class MainApp extends Application {
           MeshView meshView = buildMeshView(triangleMesh);
 
           meshView.getTransforms().addAll(
-                  new Rotate(30, Rotate.Y_AXIS),
-                  new Rotate(0, Rotate.X_AXIS)
+                  new Rotate(10, Rotate.X_AXIS),
+                  new Rotate(-10, Rotate.Y_AXIS),
+                  new Rotate(0, Rotate.Z_AXIS)
           );
 
           // Set up the scene
@@ -41,7 +42,7 @@ public class MainApp extends Application {
      }
 
      private TriangleMesh buildTriangleMeshBox() {
-          MeshLoader loader = new MeshLoader("src/main/resources/models/box.obj");
+          MeshLoader loader = new MeshLoader("src/main/resources/models/car/car_obj.obj");
           return loader.getTriangleMesh();
      }
 
@@ -57,6 +58,9 @@ public class MainApp extends Application {
           meshView.setScaleX(100);
           meshView.setScaleY(100);
           meshView.setScaleZ(100);
+
+          meshView.setRotationAxis(Rotate.X_AXIS);
+          meshView.setRotate(180);
 
           return meshView;
      }
