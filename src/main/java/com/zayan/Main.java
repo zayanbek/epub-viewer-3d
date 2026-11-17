@@ -1,12 +1,9 @@
 package com.zayan;
 
+import com.zayan.ui.MainApp;
+
 public class Main {
      public static void main(String[] args) {
-          String FILE_NAME = "./src/main/resources/The_Yellow-Wallpaper.epub";
-
-          EpubReaderIO reader = new EpubReaderIO(FILE_NAME);
-          String contents = reader.getEpubContents();
-
-          System.out.println(contents);
+          javafx.application.Application.launch(MainApp.class, args);
      }
 }
