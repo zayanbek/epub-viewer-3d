@@ -15,11 +15,11 @@
     </properties>
 
     <dependencies>
-        <!-- Source: https://mvnrepository.com/artifact/org.pageseeder.epub/pso-epub-core -->
+        <!-- Source: https://mvnrepository.com/artifact/org.openjfx/javafx-graphics -->
         <dependency>
-            <groupId>org.pageseeder.epub</groupId>
-            <artifactId>pso-epub-core</artifactId>
-            <version>0.3.3</version>
+            <groupId>org.openjfx</groupId>
+            <artifactId>javafx-graphics</artifactId>
+            <version>21.0.13</version>
             <scope>compile</scope>
         </dependency>
     </dependencies>
